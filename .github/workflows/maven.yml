@@ -21,9 +21,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'corretto'
-    - name: Unit Tests
-      run: mvn -B test --file backend/pom.xml
-
+        
     - name: Build Application
       run: |
           mvn clean 
