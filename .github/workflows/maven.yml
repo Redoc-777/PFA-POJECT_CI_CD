@@ -23,6 +23,4 @@ jobs:
         distribution: 'corretto'
         
     - name: Build Application
-      run: |
-          mvn clean 
-          mvn -B package --file backend/pom.xml
+      run: mvn -B package --file backend/pom.xml
